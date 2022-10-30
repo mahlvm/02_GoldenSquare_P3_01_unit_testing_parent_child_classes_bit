@@ -98,7 +98,7 @@ After you're done, [submit your recording
 here.](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=gs_as02)
 
 
-[Next Challenge](08_test_drive_a_class_system_python.md)
+[Next Challenge](08_test_drive_a_class_system.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 

@@ -65,7 +65,7 @@ Work through this series of exercises designed to help you learn how to isolate
 tests using Pytest.
 
 1. [Unit Testing Parent-Child Classes](mocking_bites/01_unit_testing_parent_child_classes_bite.md)
-2. [Crafting Doubles](mocking_bites/02_crafting_doubles_bite.md)
+2. [Crafting Mocks](mocking_bites/02_crafting_mocks_bite.md)
 3. [Unit Testing Peer Classes](mocking_bites/03_unit_testing_peer_classes_bite.md)
 4. [Unit Testing API Requests](mocking_bites/04_unit_testing_api_requests_bite.md)
 5. [Unit Testing Terminal IO](mocking_bites/05_unit_testing_terminal_io_bite.md)
