@@ -226,7 +226,7 @@ Expected: theswiftfoxjumpedoverthelazydog
 ```
 
 <details>
-  <summary>A few pieces of advice for if you get stuck.</summary>
+  <summary>:blue_heart: A few pieces of advice for if you get stuck.</summary>
 
   ---
 
