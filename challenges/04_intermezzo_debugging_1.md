@@ -31,8 +31,8 @@ Your challenge is to debug the program below before the timer goes off. When you
 fix the program or the timer goes off, move on to the next exercise.
 
 ```python
-def say_hello(name)
-  return f"hello (name)"
+def say_hello(name):
+    return "hello {name}"
 
 
 # Intended output:
@@ -48,49 +48,55 @@ Set a timer for 10 minutes.
 Your challenge is to debug the program below before the timer goes off. When you
 fix the program or the timer goes off, move on to the next exercise.
 
-  ```python
+```python
+def encode(text, key):
+    cipher = make_cipher(key)
 
-  def encode(text, key):
-      text = list(text.replace(" ", ""))
-      cipher = [chr(i+65) for i in range(0,25)]
-      for x in key:
-          x = x.upper()
-          if x.upper() in cipher:
-              cipher.remove(x)
-          cipher.append(x)
+    ciphertext_chars = []
+    for i in text:
+        ciphered_char = chr(65 + cipher.index(i))
+        ciphertext_chars.append(ciphered_char)
 
-      ciphertext_chars = []
-      for i in text:
-          ciphertext_chars.append(chr(65 + cipher.index(i.upper())))
-
-      encrypted = "".join(ciphertext_chars)[::-1]
-      return encrypted
+    return "".join(ciphertext_chars)
 
 
-  def decode(encrypted, key):
-      cipher = [chr(i+65) for i in range(0,25)]
-      for x in key:
-          x = x.upper()
-          if x.upper() in cipher:
-              cipher.remove(x)
-          cipher.append(x)
-      
-      plaintext = []
-      encrypted = list(encrypted)[::-1]
-      for i in encrypted:
-          plaintext.append(cipher[ord(i)-65])
+def decode(encrypted, key):
+    cipher = make_cipher(key)
 
-      return "".join(plaintext)
+    plaintext_chars = []
+    for i in encrypted:
+        plain_char = cipher[65 - ord(i)]
+        plaintext_chars.append(plain_char)
+
+    return "".join(plaintext_chars)
 
 
-  # Intended output:
-  #
-  # > encode("theswiftfoxjumpedoverthelazydog", "secretkey")
-  # => "EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL"
-  #
-  # > decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
-  # => "theswiftfoxjumpedoverthelazydog"
-  ```
+def make_cipher(key):
+    alphabet = [chr(i + 98) for i in range(1, 26)]
+    cipher_with_duplicates = list(key) + alphabet
+
+    cipher = []
+    for i in range(0, len(cipher_with_duplicates)):
+        if cipher_with_duplicates[i] not in cipher_with_duplicates[:i]:
+            cipher.append(cipher_with_duplicates[i])
+
+    return cipher
+
+# When you run this file, these next lines will show you the expected
+# and actual outputs of the functions above.
+print(f"""
+ Running: encode("theswiftfoxjumpedoverthelazydog", "secretkey")
+Expected: EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL
+  Actual: {encode('theswiftfoxjumpedoverthelazydog', 'secretkey')}
+""")
+
+print(f"""
+ Running: decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
+Expected: theswiftfoxjumpedoverthelazydog
+  Actual: {decode('EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL', 'secretkey')}
+""")
+
+```
 
 ## Interlude: Methodical Debugging
 
@@ -101,7 +107,7 @@ thinking. But most of the _time_ you spend debugging will be on the hard bugs.
 
 This is why debugging is our third key engineering practice. The better you are
 at debugging, the less time you spend not knowing what is going on, and the more
-effective you will be both here and in industry.
+effective you will be — both here and in the industry.
 
 It's time to explain Change Debugging and Discovery Debugging.
 
@@ -115,6 +121,8 @@ It's time to explain Change Debugging and Discovery Debugging.
   of changes you can make to any complex code. The chances of you landing on the
   right fix are very small, especially if you are inexperienced.
 
+  In Change Debugging, the program is an obstacle to be overcome.
+
 * **Discovery Debugging**  
   You focus instead on investigating and examining how the code executes, the
   flow of control, which ifs and loops run and how many times, the values of
@@ -125,6 +133,8 @@ It's time to explain Change Debugging and Discovery Debugging.
   You discover the bug first, and only then do you apply a change to fix it. If
   your change is wrong, you go back to discovery mode.
 
+  In Discovery Debugging, the code is an artefact to be studied.
+
 Both approaches are fine. If you can see the right change immediately and fix
 it, that's great! But if you find your changes don't work or the code is
 complex, Discovery Debugging is the right tool.
@@ -132,21 +142,29 @@ complex, Discovery Debugging is the right tool.
 ## Getting Visibility
 
 Our most powerful tool for Discovery Debugging is 'getting visibility' — using
-`p` to print out values in the program.
+`print` to print out values in the program.
 
-[Here is a demonstration of Getting Visibility](https://www.youtube.com/watch?v=JnoTLn2HYXE&t=353s). You may find the below code useful to refer to.
+[Here is a demonstration of Getting
+Visibility](https://www.youtube.com/watch?v=JnoTLn2HYXE&t=353s). You may find
+the below code useful to refer to.
 
 ```python
 def factorial(n):
-  product = 1
-  print(f"at the start product is {product}")
-  while n > 0:
-    n -= 1
-    print(f"we multiply {product} by {n}")
-    product *= n
-    print(f"we get {product}")
-  
-  return product
+    product = 1
+    print(f"at the start product is {product}")
+    while n > 0:
+        n -= 1
+        print(f"we multiply {product} by {n}")
+        product *= n
+        print(f"we get {product}")
+      
+    return product
+
+print(f"""
+ Running: factorial(5)
+Expected: 120
+  Actual: {factorial(5)}
+""")
 
 ```
 
@@ -154,48 +172,112 @@ def factorial(n):
 
 Return to this example and debug it using Discovery Debugging.
 
-
-  ``` python
-  def encode(text, key):
-      text = list(text.replace(" ", ""))
-      cipher = [chr(i+65) for i in range(0,25)]
-      for x in key:
-          x = x.upper()
-          if x.upper() in cipher:
-              cipher.remove(x)
-          cipher.append(x)
-
-      ciphertext_chars = []
-      for i in text:
-          ciphertext_chars.append(chr(65 + cipher.index(i.upper())))
-
-      encrypted = "".join(ciphertext_chars)[::-1]
-      return encrypted
+If you can, forget about trying to solve it. Instead, discover as much as you
+can about what is going on in the program.
 
 
-  def decode(encrypted, key):
-      cipher = [chr(i+65) for i in range(0,25)]
-      for x in key:
-          x = x.upper()
-          if x.upper() in cipher:
-              cipher.remove(x)
-          cipher.append(x)
-      
-      plaintext = []
-      encrypted = list(encrypted)[::-1]
-      for i in encrypted:
-          plaintext.append(cipher[ord(i)-65])
+``` python
+def encode(text, key):
+    cipher = make_cipher(key)
 
-      return "".join(plaintext)
+    ciphertext_chars = []
+    for i in text:
+        ciphered_char = chr(65 + cipher.index(i))
+        ciphertext_chars.append(ciphered_char)
 
-  # Intended output:
-  # > encode("theswiftfoxjumpedoverthelazydog", "secretkey")
-  # => "DMBGXNKDKSYOVQTBJSWBEDMBPHZAJSL"
-  #
-  # > decode("DMBGXNKDKSYOVQTBJSWBEDMBPHZAJSL", "secretkey")
-  # => "theswiftfoxjumpedoverthelazydog"
+    return "".join(ciphertext_chars)
 
+
+def decode(encrypted, key):
+    cipher = make_cipher(key)
+
+    plaintext_chars = []
+    for i in encrypted:
+        plain_char = cipher[65 - ord(i)]
+        plaintext_chars.append(plain_char)
+
+    return "".join(plaintext_chars)
+
+
+def make_cipher(key):
+    alphabet = [chr(i + 98) for i in range(1, 26)]
+    cipher_with_duplicates = list(key) + alphabet
+
+    cipher = []
+    for i in range(0, len(cipher_with_duplicates)):
+        if cipher_with_duplicates[i] not in cipher_with_duplicates[:i]:
+            cipher.append(cipher_with_duplicates[i])
+
+    return cipher
+
+# When you run this file, these next lines will show you the expected
+# and actual outputs of the functions above.
+print(f"""
+ Running: encode("theswiftfoxjumpedoverthelazydog", "secretkey")
+Expected: EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL
+  Actual: {encode('theswiftfoxjumpedoverthelazydog', 'secretkey')}
+""")
+
+print(f"""
+ Running: decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey")
+Expected: theswiftfoxjumpedoverthelazydog
+  Actual: {decode('EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL', 'secretkey')}
+""")
+```
+
+<details>
+  <summary>A few pieces of advice for if you get stuck.</summary>
+
+  **Frustrated?**  
+  If you feel frustrated, it might be because you're trying too hard to get to
+  the answer. I know it's difficult, but release that pressure. The effective
+  debugger is focused on understanding what is going on, not on trying to make
+  it work. It's hard to understand if you're placing yourself under stress.
+  
+  Really it doesn't matter if you find the answer here or not, it will not
+  affect your life after this one bit. It's just an exercise designed to help
+  you learn to explore programs.
+
+  **Pick a smaller example.**  
+  Those sample inputs and outputs are quite big. We can reduce them to make the
+  complexity of the program easier to manage. 
+  
+  For example, comment out the existing `print`s and try this:
+
+  ```python
+  print(f"""
+   Running: encode("t", "secretkey")
+  Expected: E
+    Actual: {encode('t', 'secretkey')}
+  """)
   ```
+
+  Then add letters to the string one by one. When does it start to go wrong?
+  When you can find the minimal example, start using `print` statements to
+  follow the data precisely through the execution of the code.
+
+  **Go line by line.**  
+  Start from the first line that executes. Is it correct? How sure are you? 
+  
+  Keep going through line by line and print out everything you can find. Does
+  anything look off?
+
+  **Pen and paper programs.**  
+  Get out a pen and paper and run the code yourself on paper. If you understand
+  it well enough, and you can use prints to check, you will be able to do this.
+
+  You will come across parts of the code you're not sure what they do yet.
+  Research these, play with them in the REPL, and then run those parts on paper
+  too.
+
+  **Change tack.**  
+  Experienced debuggers will try one technique, then if it doesn't work they'll
+  try another, and they will keep trying different techniques until one works.
+  
+  You don't have as many techniques as an experienced debugger yet, but you can
+  still try something else, like one of the techniques above.
+
+</details>
 
 [Example Solution](https://www.youtube.com/watch?v=JnoTLn2HYXE&t=985s)
 
@@ -204,24 +286,19 @@ Return to this example and debug it using Discovery Debugging.
 Debug this program.
 
 ```python 
->>> def get_most_common_letter(text):
-...     counter = {}
-...     for char in text:
-...     	if char != " ":
-...         	try:
-...             	counter[char] += 1
-...             except:
-...                 counter[char] = 1
-...     letter = sorted(counter.items(), key=lambda item: item[1])[0][1]
-...     return letter
+def get_most_common_letter(text):
+    counter = {}
+    for char in text:
+        counter[char] = counter.get(char, 0) + 1
+    letter = sorted(counter.items(), key=lambda item: item[1])[0][1]
+    return letter
 
-  
 
-# Intended output:
-# 
-# >>> get_most_common_letter("the roof, the roof, the roof is on fire!")
-# 'o'
-
+print(f"""
+Running:  get_most_common_letter("the roof, the roof, the roof is on fire!"))
+Expected: o
+Actual:   {get_most_common_letter("the roof, the roof, the roof is on fire!")}
+""")
 ```
 
 
