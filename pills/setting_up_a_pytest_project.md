@@ -1,9 +1,7 @@
 # Setting Up Pytest
 
-_[A video demonstration is
-here. MISSING]()_ **If you follow this
-directly, make sure you create a new directory and run the commands in that
-directory.**
+_[A video demonstration is here. MISSING]()_ **If you follow this directly, make
+sure you create a new directory and run the commands in that directory.**
 
 _[Here is a workshop demonstration of the pairing
 flow](https://youtu.be/uLbPGE6pRdc)_
@@ -12,58 +10,77 @@ flow](https://youtu.be/uLbPGE6pRdc)_
 
 Learn to set up a new pytest project.
 
-## Guidance
+## What is pytest?
 
 Pytest is a kind of programming tool called a test framework. It is written for
 use with the programming language Python. We can use it to test that our systems
 do what they are supposed to do. We can also use it to build our test-driving
 practice.
 
-To set up a new Pytest project:
+## Prerequisites
+
+Before we start you will need a few prerequisites. You may have installed these
+before, but we'll check that they are all there to be sure you are set up well.
+
+<!-- OMITTED -->
 
 ```shell
-# This assumes you have Python installed. If you don't, visit:
-# https://python.org/ to install the latest version of Python.
+# Let's install pyenv, a tool to manage different versions of Python.
+# This will ensure we have the latest Python, which has more readable error messages.
+; brew install pyenv
+# You may be given some extra instructions at the end of the command.
+# If you are, follow them. If not, keep going.
 
+# Now we'll install the latest Python.
+; pyenv install 3.11.0rc2
+
+# 
+; pipenv --version
+# If you see "pipenv, version ..." then you can skip the rest of this
+# code block and go to the next one.
+
+# Otherwise, run these:
+; python3 -m ensurepip --upgrade
+; pip3 install --user pipenv
+; echo 'export PATH="$PATH:$(python3 -m site --user-base)/bin" # Add Pipenv to PATH' >> ~/.zshrc
+; source ~/.zshrc
+; pipenv --version
+pipenv, version ...
+
+# If you run into trouble here, contact your coach.
+```
+
+## Setting up a new project
+
+To set up a new pytest project:
+
+```shell
 # First, create a directory for your project
 ; mkdir your-project-directory
 ; cd your-project-directory
 
-# Next we are going to use pipenv to set up a virtual environment and store our libraries in
-; pipenv install pytest
-; pipenv run pytest
-
-# If things are running correctly we should be able to run pytest and the command be recognised. It should look like this:
-; pytest
-================================================== test session starts ==================================================
-platform darwin -- Python 3.11.0, pytest-7.2.0, pluggy-1.0.0
-rootdir: /Users/williamoconnell/Documents/Sandbox/folder_for_foldering_in/pytest_folder
-collected 0 items
-
-# If you're running into problems you can double check by running pipenv shell, then pytest again.
-; pipenv shell
-(pipenv); pytest
-
-# If you do not have pipenv installed, we can use pip to download and install it. 
-; pip install pipenv
-
-# If you don't have pip installed, we're going to get you the latest version of Pip with:
-; curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-; python3 get-pip.py
-
-# Next, we can install pytest, which handles testing
-; pipenv install pytest
-
-# You will need to activate/deactivate your venv if you run pipenv shell. 
-
-# Running pipenv lock will generate a Pipfile that stores the libraries in
-
-; pipenv lock
-
-# Pytest will only run if either the virtual environment is activated or you use pipenv run pipenv!
+# Next, install pytest using pipenv
+; pipenv install pytest --python 3.11
+# This may take a few minutes
 
 # Create a folder for your testing files
 ; mkdir tests
+; mkdir lib
+
+# Create module init files in both `test/` and `lib/` directories
+; touch tests/__init__.py
+; touch lib/__init__.py
+# These might seem pointless, but they're important for Python to find
+# all of your files.
+
+# Verify your setup by running pytest
+; pipenv run pytest
+================================ test session starts ================================
+platform darwin -- Python 3.8.9, pytest-7.2.0, pluggy-1.0.0
+rootdir: .../your-project-directory
+collected 0 items
+
+=============================== no tests ran in 0.01s ===============================
 
 # And create a repository for your changes
 ; git init .
@@ -78,14 +95,28 @@ collected 0 items
 ; git remote add origin YOUR_REMOTE_ADDRESS
 ; git branch -M main
 ; git push -u origin main
-
-# If you have the GitHub CLI installed you can run everything from the terminal
-
-; gh repo new
-> Push an existing local repository to GitHub
-> Path to local repository (.) 
-
 ```
+
+<details>
+  <summary>:speech_balloon: Running `pipenv run ...` all the time is annoying.</summary>
+
+  If you like, you can run `pipenv shell` at the start. This will enter you into
+  a special terminal environment where pipenv will make all of your dependencies
+  available.
+
+  ```shell
+  ; pipenv shell
+  Launching subshell in virtual environment...
+  . /.../virtualenvs/.../bin/activate
+  (pyv) ;  . /.../virtualenvs/.../bin/activate
+  (pyv) ; 
+  
+  # Now you can run `pytest` without `pipenv run` on the start.
+
+  (pyv) ; pytest
+  # ...
+  ```
+</details>
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

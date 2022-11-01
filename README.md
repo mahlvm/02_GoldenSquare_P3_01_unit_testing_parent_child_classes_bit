@@ -33,9 +33,9 @@ them as you work through the challenges.
 ### Phase One: Testing Bites
 
 Work through this series of exercises designed to help you learn how to write
-tests with Pytest.
+tests with pytest.
 
-1. [Testing Methods With Equality](testing_bites/01_testing_methods_with_equality_bite.md)
+1. [Testing Functions With Equality](testing_bites/01_testing_functions_with_equality_bite.md)
 2. [Testing Classes With Equality](testing_bites/02_testing_classes_with_equality_bite.md)
 3. [Testing For Errors](testing_bites/03_testing_for_errors_bite.md)
 
@@ -50,8 +50,8 @@ performing the task and share it with your coach for feedback. These are tagged
 with a :satellite:.
 
 1. [Create Your Project](challenges/01_create_your_project.md)
-2. [Test Drive a Single-Method Program](challenges/02_test_drive_a_single_method.md)
-3. [Design a Single-Method Program](challenges/03_design_a_single_method.md) :satellite:
+2. [Test Drive a Single-Method Program](challenges/02_test_drive_a_single_function.md)
+3. [Design a Single-Method Program](challenges/03_design_a_single_function.md) :satellite:
 4. [Intermezzo: Debugging 1](challenges/04_intermezzo_debugging_1.md)
 5. [Test Drive a Class](challenges/05_test_drive_a_class.md)
 6. [Design a Class](challenges/06_design_a_class.md) :satellite:
@@ -62,7 +62,7 @@ with a :satellite:.
 ### Phase Three: Mocking Bites
 
 Work through this series of exercises designed to help you learn how to isolate
-tests using Pytest.
+tests using pytest.
 
 1. [Unit Testing Parent-Child Classes](mocking_bites/01_unit_testing_parent_child_classes_bite.md)
 2. [Crafting Mocks](mocking_bites/02_crafting_mocks_bite.md)

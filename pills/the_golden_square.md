@@ -22,8 +22,8 @@ Test-driving is a method for creating software that involves:
 2. Writing tests to check that it does that.
 3. Writing the code to pass those tests.
 
-It is called test-driven developments because you write the tests first and then
-focus on making them past. The tests 'drive' the implementation.
+It is called test-driven development because you write the tests first and then
+focus on making them pass. The tests 'drive' the implementation.
 
 There are a number of reasons people do this. One key reason to test-drive is
 because it structures your programming approach and reduces your mental load.

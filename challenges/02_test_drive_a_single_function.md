@@ -1,6 +1,9 @@
-# Test Drive a Single-Method Program
+# Test Drive a Single-Function Program
 
-_**This is a Makers Vine.** Vines are designed to gradually build up sophisticated skills. They contain a mixture of text and video, and may contain some challenge exercises without proposed solutions. [Read more about how to use Makers
+_**This is a Makers Vine.** Vines are designed to gradually build up
+sophisticated skills. They contain a mixture of text and video, and may contain
+some challenge exercises without proposed solutions. [Read more about how to use
+Makers
 Vines.](https://github.com/makersacademy/course/blob/main/labels/vines.md)_
 
 Learn to test-drive a single-method program.
@@ -77,13 +80,13 @@ other three practices — enables you to use your brain much more effectively.
 ## Exercise
 
 In this project you will build personal diary system. You'll start by writing a
-couple of methods that will be useful later on.
+couple of functions that will be useful later on.
 
-Test-drive a method with the following design:
+Test-drive a function with the following design:
 
 > **Design**
 > 
-> A method called `make_snippet` that takes a string as an argument and returns
+> A function called `make_snippet` that takes a string as an argument and returns
 > the first five words and then a '...' if there are more than that.
 
 You may immediately think "I know how to code that!". Resist that temptation and
@@ -100,22 +103,22 @@ stick to the test-driving process.
 
 ## Challenge
 
-Test-drive a method with the following design:
+Test-drive a function with the following design:
 
 > **Design**
 > 
-> A method called `count_words` that takes a string as an argument and returns
+> A function called `count_words` that takes a string as an argument and returns
 > the number of words in that string.
 
 
-[Next Challenge](03_design_a_single_method.md)
+[Next Challenge](03_design_a_single_function.md)
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
 ---
 
 **How was this resource?**  
-[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_method.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_method.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_method.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_method.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_method.md&prefill_Sentiment=😀)  
+[😫](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_function.md&prefill_Sentiment=😫) [😕](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_function.md&prefill_Sentiment=😕) [😐](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_function.md&prefill_Sentiment=😐) [🙂](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_function.md&prefill_Sentiment=🙂) [😀](https://airtable.com/shrUJ3t7KLMqVRFKR?prefill_Repository=makersacademy%2Fgolden-square-in-python&prefill_File=challenges%2F02_test_drive_a_single_function.md&prefill_Sentiment=😀)  
 Click an emoji to tell us.
 
 <!-- END GENERATED SECTION DO NOT EDIT -->
