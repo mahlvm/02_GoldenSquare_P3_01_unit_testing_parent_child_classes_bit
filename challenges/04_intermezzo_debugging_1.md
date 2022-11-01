@@ -228,6 +228,8 @@ Expected: theswiftfoxjumpedoverthelazydog
 <details>
   <summary>A few pieces of advice for if you get stuck.</summary>
 
+  ---
+
   **Frustrated?**  
   If you feel frustrated, it might be because you're trying too hard to get to
   the answer. I know it's difficult, but release that pressure. The effective
@@ -276,6 +278,8 @@ Expected: theswiftfoxjumpedoverthelazydog
   
   You don't have as many techniques as an experienced debugger yet, but you can
   still try something else, like one of the techniques above.
+
+  ---
 
 </details>
 
