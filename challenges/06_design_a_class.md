@@ -1,14 +1,17 @@
 # Design a Single-Class Program
 
-_**This is a Makers Vine.** Vines are designed to gradually build up sophisticated skills. They contain a mixture of text and video, and may contain some challenge exercises without proposed solutions. [Read more about how to use Makers
+_**This is a Makers Vine.** Vines are designed to gradually build up
+sophisticated skills. They contain a mixture of text and video, and may contain
+some challenge exercises without proposed solutions. [Read more about how to use
+Makers
 Vines.](https://github.com/makersacademy/course/blob/main/labels/vines.md)_
 
 Learn to design a single-class program.
 
 ## Introduction
 
-To design single-class programs we need to update our design recipe. Here is
-the updated recipe:
+To design single-class programs we need to update our design recipe. Here is the
+updated recipe:
 
 > # Single-Class Programs Design Recipe
 > 
@@ -23,12 +26,14 @@ the updated recipe:
 > The interface of a class includes:
 > 
 > * The name of the class.
-> * The design of its initializer and the parameters it takes.
+> * The design of its initializer, the parameters it takes, and their data types
+> * The design of any properties the user will need to read or write, and their
+>   data types
 > * The design of its public methods, including:
 >   * Their names and purposes
->   * What parameters they take and the data types.
+>   * What parameters they take and the data types
 >   * What they return and that data type
->   * Any other side effects they might have.
+>   * Any other side effects they might have
 > 
 > Steps 3 and 4 then operate as a cycle.
 > 
@@ -55,12 +60,14 @@ the updated recipe:
 > may also need to revise your design, for example if you realise you made a
 > mistake earlier.
 
-Copy and fill out [this template](../resources/single_python_class_recipe_template.md)
-for each of the below exercises.
+Copy and fill out [this
+template](../resources/single_python_class_recipe_template.md) for each of the
+below exercises.
 
 ## Demonstration
 
-*NOT DONE IN PYTHON YET*[A video demonstration](https://www.youtube.com/watch?v=sRAtinfld-w&t=2385s)
+*NOT DONE IN PYTHON YET*[A video
+demonstration](https://www.youtube.com/watch?v=sRAtinfld-w&t=2385s)
 
 <!-- OMITTED -->
 
@@ -79,7 +86,8 @@ project. Both of these will be within a single class.
 
 Don't worry about user input & output here.
 
-*NOT DONE IN PYTHON YET*[Example Solution](https://www.youtube.com/watch?v=sRAtinfld-w&t=3760s)
+*NOT DONE IN PYTHON YET*[Example
+Solution](https://www.youtube.com/watch?v=sRAtinfld-w&t=3760s)
 
 ## Challenge
 

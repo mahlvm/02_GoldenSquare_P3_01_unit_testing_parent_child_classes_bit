@@ -1,6 +1,9 @@
 # Test Drive a Single-Class Program
 
-_**This is a Makers Vine.** Vines are designed to gradually build up sophisticated skills. They contain a mixture of text and video, and may contain some challenge exercises without proposed solutions. [Read more about how to use Makers
+_**This is a Makers Vine.** Vines are designed to gradually build up
+sophisticated skills. They contain a mixture of text and video, and may contain
+some challenge exercises without proposed solutions. [Read more about how to use
+Makers
 Vines.](https://github.com/makersacademy/course/blob/main/labels/vines.md)_
 
 Learn to test-drive a single-class program.
@@ -30,7 +33,7 @@ To introduce this, we're going to:
 3. Test-drive a system of classes.
 4. Design a system of classes.
 
-In this step, we will test-drive a single class program. This means we will
+In this step, we will test-drive a single-class program. This means we will
 focus on the 'Create Examples as Tests' and 'Implement Behaviour' steps first.
 
 ## Creating Examples for Single-Class Programs
@@ -38,16 +41,24 @@ focus on the 'Create Examples as Tests' and 'Implement Behaviour' steps first.
 Instead of an example like this:
 
 ```python
-extract_uppercase("hello WORLD") == ["WORLD"]
+extract_uppercase("hello WORLD") => ["WORLD"]
 ```
 
 We will need to create examples of the behaviour of the class, like this:
 
 ```python
-gratitudes = Gratitudes()
-gratitudes.add("your cat")
-gratitudes.add("nice people")
-assert gratitudes.format == "Be grateful for: your cat, nice people"
+# When an order is created with an address
+# The address is reflected in the address attribute
+order = Order("123 Fake Street")
+assert order.address == "123 Fake Street"
+
+# When we add two valid items to the order
+# And we format the order note
+# It returns a string with the address and the items
+order = Order("123 Fake Street")
+order.add_item("Chair")
+order.add_item("Moisturiser")
+assert order.format_note() == "Order for 123 Fake Street: Chair, Moisturiser"
 ```
 
 Some methods on a class can be tested individually, but much of the time
@@ -66,39 +77,48 @@ previous code, or re-write it if you want to practice.
 
 ```python
 class DiaryEntry():
-  def __init__(self, title, contents) # title, contents are strings
-    # ...
-  
+    # User-facing properties:
+    #   title: string
+    #   contents: string
+    # Note, you can add more properties if you need to, but these are the ones
+    # the user cares about and so the ones that should get tested.
 
-  def title(self):
-    # Returns the title as a string
-  
+    def __init__(self, title, contents):
+        # Parameters:
+        #   title: string
+        #   contents: string
+        # Side-effects:
+        #   Sets the title and contents properties of the self object
+        pass
 
-  def contents(self):
-    # Returns the contents as a string
-  
+    def count_words(self):
+        # Returns:
+        #   int: the number of words in the diary entry
+        pass
 
-  def count_words(self):
-    # Returns the number of words in the contents as an integer
-  
+    def reading_time(self, wpm):
+        # Parameters:
+        #   wpm: an integer representing the number of words the user can read 
+        #        per minute
+        # Returns:
+        #   int: an estimate of the reading time in minutes for the contents at
+        #        the given wpm.
+        pass
 
-  def reading_time(self, wpm): # wpm is an integer representing the number of words the
-                        # user can read per minute
-    # Returns an integer representing an estimate of the reading time in minutes
-    # for the contents at the given wpm.
-  
-
-  def reading_chunk(self, wpm, minutes): # `wpm` is an integer representing the number
-                                  # of words the user can read per minute
-                                  # `minutes` is an integer representing the
-                                  # number of minutes the user has to read
-    # Returns a string with a chunk of the contents that the user could read
-    # in the given number of minutes.
-    # If called again, `reading_chunk` should return the next chunk, skipping
-    # what has already been read, until the contents is fully read.
-    # The next call after that it should restart from the beginning.
-  
-
+    def reading_chunk(self, wpm, minutes):
+        # Parameters
+        #   wpm: an integer representing the number of words the user can read
+        #        per minute
+        #   minutes: an integer representing the number of minutes the user has
+        #            to read
+        # Returns:
+        #   string: a chunk of the contents that the user could read in the
+        #           given number of minutes
+        #
+        # If called again, `reading_chunk` should return the next chunk,
+        # skipping what has already been read, until the contents is fully read.
+        # The next call after that should restart from the beginning.
+        pass
 ```
 
 *REDO IN PYTHON* [Example Solution](https://www.youtube.com/watch?v=sRAtinfld-w&t=820s)
@@ -110,19 +130,22 @@ your previous code.
 
 ```python
 class GrammarStats():
-  def __init__(self):
-    # ...
+    def __init__(self):
+        pass
   
-
-  def check(self, text): # text is a string
-    # Returns true or false depending on whether the text begins with a capital
-    # letter and ends with a sentence-ending punctuation mark.
+    def check(self, text):
+        # Parameters:
+        #   text: string
+        # Returns:
+        #   bool: true if the text begins with a capital letter and ends with a
+        #         sentence-ending punctuation mark, false otherwise
+        pass
   
-
-  def percentage_good(self):
-    # Returns as an integer the percentage of texts checked so far that passed
-    # the check defined in the `check` method. The number 55 represents 55%.
-
+    def percentage_good(self):
+        # Returns:
+        #   int: the percentage of texts checked so far that passed the check
+        #        defined in the `check` method. The number 55 represents 55%.
+        pass
 ```
 
 

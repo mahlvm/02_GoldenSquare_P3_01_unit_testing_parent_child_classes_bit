@@ -1,26 +1,43 @@
 # {{PROBLEM}} Class Design Recipe
 
+Copy this into a `recipe.md` in your project and fill it out.
+
 ## 1. Describe the Problem
 
 _Put or write the user story here. Add any clarifying notes you might have._
 
 ## 2. Design the Class Interface
 
-_Include the initializer and public methods with all parameters and return values._
+_Include the initializer, public properties, and public methods with all parameters, return values, and side-effects._
 
 ```python
 # EXAMPLE
 
 class Reminder():
-  def __init__(self, name): # name is a string
-    # ...
+  # User-facing properties:
+  #   name: string
 
-  def remind_me_to(self, task): # task is a string
-    # No return value
+  def __init__(self, name):
+    # Parameters:
+    #   name: string
+    # Side effects:
+    #   Sets the name property of the self object
+    pass # No code here yet
+
+  def remind_me_to(self, task):
+    # Parameters:
+    #   task: string representing a single task
+    # Returns:
+    #   Nothing
+    # Side-effects
+    #   Saves the task to the self object
+    pass # No code here yet
 
   def remind(self):
-    # Throws an exception if no task is set
-    # Otherwise, returns a string reminding the user to do the task
+    # Returns:
+    #   A string reminding the user to do the task
+    # Side-effects:
+    #   Throws an exception if no task is set
 
 ```
 
@@ -31,16 +48,25 @@ _Make a list of examples of how the class will behave in different situations._
 ``` python
 # EXAMPLE
 
-# 1
+"""
+Given a name and a task
+#remind reminds the user to do the task
+"""
 reminder = Reminder("Kay")
 reminder.remind_me_to("Walk the dog")
 reminder.remind() # => "Walk the dog, Kay!"
 
-# 2
+"""
+Given a name and no task
+#remind raises an exception
+"""
 reminder = Reminder("Kay")
-reminder.remind() # fails with "No task set."
+reminder.remind() # raises an error with the message "No task set."
 
-# 3
+"""
+Given a name and an empty task
+#remind still reminds the user to do the task, even though it looks odd
+"""
 reminder = Reminder("Kay")
 reminder.remind_me_to("")
 reminder.remind() # => ", Kay!"

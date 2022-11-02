@@ -66,7 +66,7 @@ it.
 
 Test-driven development is an approach to building software in the same way that
 Karate is an approach to combat. It structures everything you do. At first it
-will feel  strange and you will want to resume your unstructured approach.
+will feel strange and you will want to resume your unstructured approach.
 However, it allows you to tackle much greater problems. 
 
 In the same way the discipline of a martial artist enables them to use their
@@ -79,7 +79,7 @@ other three practices — enables you to use your brain much more effectively.
 
 ## Exercise
 
-In this project you will build personal diary system. You'll start by writing a
+In this project you will build a personal diary system. You'll start by writing a
 couple of functions that will be useful later on.
 
 Test-drive a function with the following design:
