@@ -1,0 +1,15 @@
+We're going to translate this from Ruby to Python.
+
+The code blocks will run like this:
+
+```ruby
+... ruby code ...
+```
+
+```python
+... python code ...
+```
+
+Let's get started!
+
+---
