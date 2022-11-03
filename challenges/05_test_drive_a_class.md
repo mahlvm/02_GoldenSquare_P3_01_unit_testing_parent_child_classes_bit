@@ -77,7 +77,7 @@ previous code, or re-write it if you want to practice.
 
 ```python
 class DiaryEntry():
-    # User-facing properties:
+    # Public (user-facing) properties:
     #   title: string
     #   contents: string
     # Note, you can add more properties if you need to, but these are the ones

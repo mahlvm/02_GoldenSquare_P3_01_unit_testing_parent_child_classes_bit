@@ -38,7 +38,7 @@ class Reminder():
     #   A string reminding the user to do the task
     # Side-effects:
     #   Throws an exception if no task is set
-
+    pass # No code here yet
 ```
 
 ## 3. Create Examples as Tests

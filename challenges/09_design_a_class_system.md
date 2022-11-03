@@ -127,8 +127,13 @@ that once you look at it, you may be influenced by my approach and this may
 affect how much learning you can get from this exercise. That said, I trust you
 to make the right decision.
 
+## Moving On
 
-[Next Challenge](10_adventure.md)
+You've now completed all of the core challenges for this module.
+
+[Head back to the main sequence to take on more advanced
+topics.](../README.md)
+
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
 
