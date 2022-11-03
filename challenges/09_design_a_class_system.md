@@ -117,7 +117,7 @@ Some pointers:
   using `input()` and only use `print()` for debugging purposes.
 
 After you're done, [submit your recording
-here.](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=gs_as03)
+here.](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=gspy_as03)
 
 ## Example Solution
 

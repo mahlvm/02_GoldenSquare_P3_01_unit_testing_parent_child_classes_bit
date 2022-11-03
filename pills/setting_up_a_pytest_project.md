@@ -67,7 +67,7 @@ To set up a new pytest project:
 ; mkdir tests
 ; mkdir lib
 
-# Create module init files in both `test/` and `lib/` directories
+# Create module init files in both `tests/` and `lib/` directories
 ; touch tests/__init__.py
 ; touch lib/__init__.py
 # These might seem pointless, but they're important for Python to find

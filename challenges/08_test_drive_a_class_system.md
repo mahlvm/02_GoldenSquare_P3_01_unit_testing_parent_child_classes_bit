@@ -19,8 +19,8 @@ again to test-driving a system involving multiple classes.
 This presents us with some new design challenges. We will cover those in the
 next challenge. For now, we will focus on test-driving.
 
-The principle here is similar jumping from methods to classes. We still need to
-generate examples and encode these as tests, followed up by implementing
+The principle here is similar to jumping from methods to classes. We still need
+to generate examples and encode these as tests, followed up by implementing
 behaviour to match those examples.
 
 Consider the following design for a music library.
@@ -203,7 +203,7 @@ class MusicLibrary():
 And then back to the integration test to uncomment the next line:
 
 ```python
-# File: spec/music_library_integration_spec.rb
+# File: tests/test_music_library_integration_spec.py
 
 def test_music_library_integration():
   library = MusicLibrary()
