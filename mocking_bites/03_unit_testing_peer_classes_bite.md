@@ -20,28 +20,31 @@ parent-child classes. Consider this example:
 # File: lib/diary_entry.py
 
 class DiaryEntry:
-  def __init__(self, title, contents): # title, contents are both strings
-    ...
+    # Public properties:
+    #   title: a string representing the title
+    #   contents: a string representing the contents
+    def __init__(self, title, contents):
+        # title, contents are both strings
+        # Side-effects: sets the title and contents properties
+        pass
 
-  def title(self):
-    # Returns the title as a string
-    ...
-
-  def contents(self):
-    # Returns the contents as a string
-    ...
+    def word_count(self):
+        # Returns the word count of the contents
+        pass
 ```
 
 ```python
-# File: lib/diary_reader.py
+# File: lib/diary_entry_formatter.py
 
 class DiaryEntryFormatter:
-  def __init__(self, diary_entry): # diary_entry is an instance of DiaryEntry
-    ...
+    def __init__(self, diary_entry):
+        # diary_entry is an instance of DiaryEntry
+        pass
 
-  def format(self):
-    # Returns a nicely formatted diary entry
-    ...
+    def format(self):
+        # Returns a nicely formatted diary entry like this:
+        #   My Title (2 words): My Contents
+        pass
 ```
 
 In this case, instead of creating a mock and passing it into a method, we pass
@@ -52,11 +55,17 @@ it into the class' `__init__` method.
 from unittest.mock import Mock
 
 def test_formats_a_diary_entry():
-  fake_diary_entry = Mock()
-  fake_diary_entry.title.return_value = "Hello"
-  fake_diary_entry.contents.return_value = "Hello, world!"
-  formatter = DiaryEntryFormatter(fake_diary_entry)
-  assert formatter.format() == "Hello: Hello, world!"
+    fake_diary_entry = Mock()
+    
+    # To set properties on the mock, we can just set them
+    fake_diary_entry.title = "Hello"
+    fake_diary_entry.contents = "Hello, world!"
+
+    # And we've seen how to tell the mock to return a value for a method
+    fake_diary_entry.word_count.return_value = 2
+
+    formatter = DiaryEntryFormatter(fake_diary_entry)
+    assert formatter.format() == "Hello (2 words): Hello, world!"
 ```
 
 ## Demonstration
@@ -71,36 +80,38 @@ Consider these class designs:
 # File: lib/secret_diary.py
 
 class SecretDiary:
-  def __init__(self, diary): # diary is an instance of Diary
-    ...
+    def __init__(self, diary):
+        # diary is an instance of Diary
+        pass
 
-  def read(self):
-    # Raises the error "Go away!" if the diary is locked
-    # Returns the diary's contents if the diary is unlocked
-    # The diary starts off locked
-    ...
+    def read(self):
+        # Raises the error "Go away!" if the diary is locked
+        # Returns the diary's contents if the diary is unlocked
+        # The diary starts off locked
+        pass
 
-  def lock(self):
-    # Locks the diary
-    # Returns nothing
-    ...
+    def lock(self):
+        # Locks the diary
+        # Returns nothing
+        pass
 
-  def unlock(self):
-    # Unlocks the diary
-    # Returns nothing
-    ...
+    def unlock(self):
+        # Unlocks the diary
+        # Returns nothing
+        pass
 ```
 
 ```python
 # File: lib/diary.py
 
 class Diary
-  def __init__(self, contents): # contents is a string
-    ...
+    def __init__(self, contents):
+        # contents is a string
+        pass
 
-  def read(self):
-    # Returns the contents of the diary
-    ...
+    def read(self):
+        # Returns the contents of the diary
+        pass
 ```
 
 Test-drive these classes. Include:
@@ -118,16 +129,16 @@ previous exercise.
 
 ```python
 class TaskFormatter:
-  def __init__(self, task): # task is an instance of Task
-    ...
+    def __init__(self, task): # task is an instance of Task
+        pass
 
-  def format(self):
-    # Returns the task formatted as a string.
-    # If the task is not complete, the format is:
-    # - [ ] Task title
-    # If the task is complete, the format is:
-    # - [x] Task title
-    ...
+    def format(self):
+        # Returns the task formatted as a string.
+        # If the task is not complete, the format is:
+        # - [ ] Task title
+        # If the task is complete, the format is:
+        # - [x] Task title
+        pass
 ```
 
 Test-drive this class using unit tests and mocking. 

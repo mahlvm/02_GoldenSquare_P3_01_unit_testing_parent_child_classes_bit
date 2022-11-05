@@ -81,7 +81,7 @@ for each of the below exercises.
 doing it and submit that recording to your coach for feedback. [How do I do
 this?](../pills/process_feedback_challenges.md)
 
-This is the big one! You might want to start a new RSpec project for this.
+This is the big one! You might want to start a new pytest project for this.
 
 Use object-oriented design and test-driven development, backed up by your
 debugging and pairing skills, to develop the following program.

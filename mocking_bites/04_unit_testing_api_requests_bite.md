@@ -8,37 +8,59 @@ Bites.](https://github.com/makersacademy/course/blob/main/labels/bites.md)_
 
 Learn to test API requests using Pythons mocks. 
 
-> **Note**: To run the examples in this Bite and complete the challenge, you will need to install a Python library called `requests`.
-> To install it, run `pipenv install requests` in your `mocking_bites` project directory. Do all your work for this Bite within your `mocking_bites` project.
-
 ## Introduction
+
+> **Note**: To run the examples in this Bite and complete the challenge, you
+> will need to install a Python library called `requests`.
+> 
+> To install it, [create a new pytest
+> project](../pills/setting_up_a_pytest_project.md) and then run this:
+> 
+> ```shell
+> ; pipenv install requests
+> ```
+> 
+> To check you've done this correctly, then run:
+> 
+> ```shell
+> ; pipenv run python -c "import requests"
+> # If this command runs with no output and no errors, you're good!
+> ```
+> 
+> If you have any trouble, please consult a coach.
 
 So far this has been a bit theoretical. Now we will show you a realistic
 use-case for this technique.
-
 
 Many applications request data from the internet. That data is regularly
 updated, which is great, but it makes it hard to test. Consider:
 
 ```python
-import json
+# File: lib/activity_suggester.py
 import requests
-class ActivitySuggester:
- def suggest(self):
-   response = self._make_request_to_api()
-   return f"Why not: {response['activity']}"
 
- # This method calls an 'API' on the internet to get a random activity.
- # An API is a way of allowing programs to request data from other programs.
- def _make_request_to_api(self):
-   response = requests.get("http://www.boredapi.com/api/activity")
-   return response.json()
+
+class ActivitySuggester:
+    def suggest(self):
+        response = self._make_request_to_api()
+        return f"Why not: {response['activity']}"
+
+    # This method calls an 'API' on the internet to get a random activity.
+    # An API is a way of allowing programs to request data from other programs.
+    def _make_request_to_api(self):
+        response = requests.get("http://www.boredapi.com/api/activity")
+        return response.json()
 
 # Usage
 # =====
-# activity_suggester = ActivitySuggester()
-# activity_suggester.suggest() # => "Why not: Learn how to use a french press"
-# activity_suggester.suggest() # => "Why not: Hold a video game tournament with some friends"
+activity_suggester = ActivitySuggester()
+# activity_suggester.suggest() will return a different value every time
+
+print(activity_suggester.suggest())
+# Why not: Learn how to use a french press
+
+print(activity_suggester.suggest())
+# Why not: Hold a video game tournament with some friends
 ```
 
 This is really wonderful, but how do we test it?
@@ -49,21 +71,21 @@ request — with a mock. That way we can control what it returns.
 Here's how we do that:
 
 ```python
-import json
-import requests
+# File: lib/activity_suggester.py
+
 
 class ActivitySuggester:
-  def __init__(self, requester):  # requester is usually `requests`
-    self.requester = requester
+    def __init__(self, requester):  # requester is usually `requests`
+        self.requester = requester
 
-  def suggest(self):
-    response = self._make_request_to_api()
-    return f"Why not: {response['activity']}"
+    def suggest(self):
+        response = self._make_request_to_api()
+        return f"Why not: {response['activity']}"
 
-  def _make_request_to_api(self):
-    # We use 'self.requester' rather than 'requests'
-    response = self.requester.get("http://www.boredapi.com/api/activity")
-    return response.json()
+    def _make_request_to_api(self):
+        # We use 'self.requester' rather than 'requests'
+        response = self.requester.get("http://www.boredapi.com/api/activity")
+        return response.json()
 
 # Usage
 # =====
@@ -71,37 +93,41 @@ class ActivitySuggester:
 # activity_suggester = ActivitySuggester(requests)
 # activity_suggester.suggest() # => "Why not: Learn how to use a french press"
 # activity_suggester.suggest() # => "Why not: Hold a video game tournament with some friends"
-
-
-# To test this
-from unittest.mock import Mock
-
-def test_calls_api_to_provide_suggested_activity():
-  requester_mock = Mock(name="requester")
-  response_mock = Mock(name="response")
-  # We set up `requester_mock` to return `response_mock` when called with
-  # `.get()`.
-  requester_mock.get.return_value = response_mock
-  # And we set up `response_mock` to return a sample output of the API when
-  # called with `.json()`.
-  # I got this using `curl "https://www.boredapi.com/api/activity"`.
-  response_mock.json.return_value =  {
-    "activity": "Write a short story",
-    "type": "recreational",
-    "participants": 1,
-    "price": 0,
-    "link": "",
-    "key": "6301585",
-    "accessibility": 0.1
-  }
-  
-  activity_suggester = ActivitySuggester(requester_mock)
-  result = activity_suggester.suggest()
-  assert result == "Why not: Write a short story"
-
 ```
 
-By crafting a mock that acts just like `requests`, at least as far as `ActivitySuggester` wants to use it, you can make this untestable code testable.
+```python
+# File: tests/test_activity_suggester.py
+from unittest.mock import Mock
+from lib.activity_suggester import ActivitySuggester
+
+def test_calls_api_to_provide_suggested_activity():
+    requester_mock = Mock(name="requester") # This name is just for readability
+    response_mock = Mock(name="response")
+
+    # We tell `requester_mock` to return `response_mock` 
+    # when we call `get()` on it.
+    requester_mock.get.return_value = response_mock
+
+    # We tell `response_mock` to return a sample output of the API when
+    # we call `json()` on it.
+    # I got this sample using `curl "https://www.boredapi.com/api/activity"`.
+    response_mock.json.return_value = {
+        "activity": "Write a short story",
+        "type": "recreational",
+        "participants": 1,
+        "price": 0,
+        "link": "",
+        "key": "6301585",
+        "accessibility": 0.1
+    }
+
+    activity_suggester = ActivitySuggester(requester_mock)
+    result = activity_suggester.suggest()
+    assert result == "Why not: Write a short story"
+```
+
+By crafting a mock that acts just like `requests`, at least as far as
+`ActivitySuggester` wants to use it, you can make this untestable code testable.
 
 ## Demonstration
 
@@ -112,20 +138,24 @@ By crafting a mock that acts just like `requests`, at least as far as `ActivityS
 Unit test this class.
 
 ```python
- import json
- import time
- import requests
- 
- class TimeError:
-  # Returns difference in seconds between server time
-  # and the time on this computer
-  def error(self):
-    return self._get_server_time() - time.time()
+import time
+import requests
 
-  def _get_server_time(self):
-    response = requests.get("https://worldtimeapi.org/api/ip")
-    json = response.json()
-    return json["unixtime"]
+
+class TimeError:
+    # Returns difference in seconds between the time on an external server
+    # and the time on this computer
+    def error(self):
+        return self._get_server_time() - time.time()
+
+    # The underscore denotes this is a private method not to be called from the
+    # outside. You also shouldn't stub it in your tests. So if your tests contain
+    # the words `get_server_time`, you're on the wrong track.
+    def _get_server_time(self):
+        response = requests.get("https://worldtimeapi.org/api/ip")
+        json = response.json()
+        return json["unixtime"]
+
 ```
 
 To make this testable, you will need to create a mock for `requests` and also
@@ -141,17 +171,24 @@ deal with the behaviour of `time.time()` which is also non-deterministic.
 Unit test this class.
 
 ```python
-import json
 import requests
 
-class CatFacts:
- def provide(self):
-   return f"Cat fact: {self._get_cat_fact()['fact']}"
 
- def _get_cat_fact(self):
-   response = requests.get("https://catfact.ninja/fact")
-   return response.json()
+class CatFacts:
+    def provide(self):
+        return f"Cat fact: {self._get_cat_fact()['fact']}"
+
+    # Again, don't stub this method.
+    def _get_cat_fact(self):
+        response = requests.get("https://catfact.ninja/fact")
+        return response.json()
 ```
+
+## Moving On
+
+You've now completed all of the core challenges for this module.
+
+[Head back to the main sequence to take on the project.](../README.md)
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->

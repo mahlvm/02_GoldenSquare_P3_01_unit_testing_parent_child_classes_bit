@@ -14,31 +14,31 @@ _Include the initializer, public properties, and public methods with all paramet
 # EXAMPLE
 
 class Reminder():
-  # User-facing properties:
-  #   name: string
-
-  def __init__(self, name):
-    # Parameters:
+    # User-facing properties:
     #   name: string
-    # Side effects:
-    #   Sets the name property of the self object
-    pass # No code here yet
 
-  def remind_me_to(self, task):
-    # Parameters:
-    #   task: string representing a single task
-    # Returns:
-    #   Nothing
-    # Side-effects
-    #   Saves the task to the self object
-    pass # No code here yet
+    def __init__(self, name):
+        # Parameters:
+        #   name: string
+        # Side effects:
+        #   Sets the name property of the self object
+        pass # No code here yet
 
-  def remind(self):
-    # Returns:
-    #   A string reminding the user to do the task
-    # Side-effects:
-    #   Throws an exception if no task is set
-    pass # No code here yet
+    def remind_me_to(self, task):
+        # Parameters:
+        #   task: string representing a single task
+        # Returns:
+        #   Nothing
+        # Side-effects
+        #   Saves the task to the self object
+        pass # No code here yet
+
+    def remind(self):
+        # Returns:
+        #   A string reminding the user to do the task
+        # Side-effects:
+        #   Throws an exception if no task is set
+        pass # No code here yet
 ```
 
 ## 3. Create Examples as Tests

@@ -19,6 +19,8 @@ that looks after a list of other classes. For example, a `Diary` having many
 Consider the following design:
 
 ```python
+# File: lib/diary.py
+
 class Diary:
     # Public properties:
     #   entries: a list of instances of DiaryEntry
@@ -33,6 +35,10 @@ class Diary:
     def count_words(self):
         # Returns the number of words in all entries
         pass
+```
+
+```python
+# File: lib/diary_entry.py
 
 class DiaryEntry:
     # Public properties:
@@ -86,7 +92,7 @@ Secondly, we need to create fake versions of `DiaryEntry` that will live totally
 within our tests. They will behave similarly to a real diary entry, but return
 fixed values. Then we pass that to `Diary` instead.
 
-```ruby
+```python
 def test_diary_counts_words_in_all_entries_with_fakes():
     diary = Diary()
     diary.add(FakeTwoWordDiaryEntry())
