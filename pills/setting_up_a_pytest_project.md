@@ -1,12 +1,6 @@
 # Setting Up Pytest
 
-_[A video demonstration is here. MISSING]()_ **If you follow this directly, make
-sure you create a new directory and run the commands in that directory.**
-
-_[Here is a workshop demonstration of the pairing
-flow](https://youtu.be/uLbPGE6pRdc)_
-
-<!-- OMITTED -->
+_[A video demonstration is here.](https://youtu.be/zM-YTFlo1pI)_
 
 Learn to set up a new pytest project.
 
@@ -22,8 +16,6 @@ practice.
 Before we start you will need a few prerequisites. You may have installed these
 before, but we'll check that they are all there to be sure you are set up well.
 
-<!-- OMITTED -->
-
 ```shell
 # Let's install pyenv, a tool to manage different versions of Python.
 # This will ensure we have the latest Python, which has more readable error messages.
@@ -32,9 +24,9 @@ before, but we'll check that they are all there to be sure you are set up well.
 # If you are, follow them. If not, keep going.
 
 # Now we'll install the latest Python.
-; pyenv install 3.11.0rc2
+; pyenv install 3.11
 
-# 
+# And let's check to see if it is properly installed
 ; pipenv --version
 # If you see "pipenv, version ..." then you can skip the rest of this
 # code block and go to the next one.

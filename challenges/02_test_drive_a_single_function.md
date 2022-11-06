@@ -75,7 +75,13 @@ other three practices — enables you to use your brain much more effectively.
 
 ## Demonstration
 
-[A video demonstration MISSING in Python](https://www.youtube.com/watch?v=3VwGSAOZ5sc&t=0s)
+> **Note** 
+> Test-driving, design, debugging, and pairing are processes. As such,
+> the most effective way to learn for most people is to see someone apply the
+> process, talk it through, and then try it themselves. For this reason, you may
+> find the videos in this sequence particularly useful.
+
+[A video demonstration](https://www.youtube.com/watch?v=7MBwOSc9Kzk&t=0s)
 
 ## Exercise
 
@@ -99,7 +105,7 @@ stick to the test-driving process.
 5. Refactor if necessary.
 6. Return to step 1 and keep going until your program is complete.
 
-[Example solution](https://www.youtube.com/watch?v=3VwGSAOZ5sc&t=1875s)
+[Example solution](https://www.youtube.com/watch?v=7MBwOSc9Kzk&t=2471s)
 
 ## Challenge
 

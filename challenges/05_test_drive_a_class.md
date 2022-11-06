@@ -68,7 +68,7 @@ Implementing behaviour is roughly the same as for methods, though we will place
 more emphasis on building the examples and behaviour in small steps due to the
 increased complexity of single-class tests.
 
-*REDO IN PYTHON* [A video demonstration](https://www.youtube.com/watch?v=sRAtinfld-w&t=0s)
+[A video demonstration](https://www.youtube.com/watch?v=WAUOlZHWhBI&t=0s)
 
 ## Exercise
 
@@ -77,18 +77,16 @@ previous code, or re-write it if you want to practice.
 
 ```python
 class DiaryEntry():
-    # Public (user-facing) properties:
-    #   title: string
-    #   contents: string
-    # Note, you can add more properties if you need to, but these are the ones
-    # the user cares about and so the ones that should get tested.
-
     def __init__(self, title, contents):
         # Parameters:
         #   title: string
         #   contents: string
-        # Side-effects:
-        #   Sets the title and contents properties of the self object
+        pass
+
+    def format(self):
+        # Returns:
+        #   A formatted diary entry, for example:
+        #   "My Title: These are the contents"
         pass
 
     def count_words(self):
@@ -121,7 +119,7 @@ class DiaryEntry():
         pass
 ```
 
-*REDO IN PYTHON* [Example Solution](https://www.youtube.com/watch?v=sRAtinfld-w&t=820s)
+[Example Solution](https://www.youtube.com/watch?v=WAUOlZHWhBI&t=1251s)
 
 ## Challenge
 

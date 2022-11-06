@@ -51,7 +51,7 @@ behaviour of the class.
 
 ## Demonstration
 
-[Demonstration Video](https://www.youtube.com/watch?v=8vWmgQ3WCU0&t=1015s)
+[Demonstration Video](https://www.youtube.com/watch?v=XT30ee3ZfGE&t=1605s)
 
 ## Exercise
 
@@ -100,7 +100,7 @@ Write some tests for this class.
 
 ### Example Solutions
 
-[Example Solution](https://www.youtube.com/watch?v=8vWmgQ3WCU0&t=1440s)
+[Example Solution](https://www.youtube.com/watch?v=XT30ee3ZfGE&t=1991s)
 
 ## Challenge
 

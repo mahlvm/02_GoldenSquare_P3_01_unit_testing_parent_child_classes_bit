@@ -100,7 +100,7 @@ Expected: theswiftfoxjumpedoverthelazydog
 
 ## Interlude: Methodical Debugging
 
-_[A condensed video explanation of this section is here.](https://www.youtube.com/watch?v=JnoTLn2HYXE&t=0s)_
+_[A condensed video explanation of this section is here.](https://youtu.be/YtRdDfO7aVA)_
 
 Exercise 2 probably felt hard. Most bugs are so easy we can solve them without
 thinking. But most of the _time_ you spend debugging will be on the hard bugs.
@@ -145,7 +145,7 @@ Our most powerful tool for Discovery Debugging is 'getting visibility' — using
 `print` to print out values in the program.
 
 [Here is a demonstration of Getting
-Visibility](https://www.youtube.com/watch?v=JnoTLn2HYXE&t=353s). You may find
+Visibility](https://www.youtube.com/watch?v=e3XttC2zKWk&t=0s). You may find
 the below code useful to refer to.
 
 ```python
@@ -283,7 +283,7 @@ Expected: theswiftfoxjumpedoverthelazydog
 
 </details>
 
-[Example Solution](https://www.youtube.com/watch?v=JnoTLn2HYXE&t=985s)
+[Example Solution](https://www.youtube.com/watch?v=e3XttC2zKWk&t=1066s)
 
 ## Challenge
 

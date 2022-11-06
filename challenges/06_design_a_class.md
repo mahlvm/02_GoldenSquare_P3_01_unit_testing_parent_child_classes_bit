@@ -66,8 +66,7 @@ below exercises.
 
 ## Demonstration
 
-*NOT DONE IN PYTHON YET*[A video
-demonstration](https://www.youtube.com/watch?v=sRAtinfld-w&t=2385s)
+:construction: Video pending.
 
 <!-- OMITTED -->
 
@@ -86,8 +85,9 @@ project. Both of these will be within a single class.
 
 Don't worry about user input & output here.
 
-*NOT DONE IN PYTHON YET*[Example
-Solution](https://www.youtube.com/watch?v=sRAtinfld-w&t=3760s)
+:construction: Video pending.
+
+<!-- OMITTED -->
 
 ## Challenge
 

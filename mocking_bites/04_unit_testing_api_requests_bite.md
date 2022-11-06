@@ -131,7 +131,9 @@ By crafting a mock that acts just like `requests`, at least as far as
 
 ## Demonstration
 
-[Demonstration Video](<!-- OMITTED -->)
+<!-- OMITTED -->
+
+_Video Pending_
 
 ## Exercise
 
@@ -161,10 +163,11 @@ class TimeError:
 To make this testable, you will need to create a mock for `requests` and also
 deal with the behaviour of `time.time()` which is also non-deterministic.
 
-[Example Solution](<!-- OMITTED -->)
-
 <!-- OMITTED -->
 
+_Video Pending_
+
+<!-- OMITTED -->
 
 ## Challenge
 

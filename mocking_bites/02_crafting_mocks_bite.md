@@ -67,12 +67,12 @@ assert fake_object.greet() == "Hello, world!"
 # As a class
 class FakeObject:
     def __init__(self):
-      self.greet_has_been_called = False
+        self.greet_has_been_called = False
 
     def greet(self, name):
-      self.greet_has_been_called = True
-      assert name == "Kay"
-      return "Hello, Kay!"
+        self.greet_has_been_called = True
+        assert name == "Kay"
+        return "Hello, Kay!"
 
 fake_object = FakeObject()
 
@@ -187,7 +187,9 @@ def test_creates_mock_for_specific_case():
 
 ```
 
-[Example Solution](<!-- OMITTED -->)
+<!-- OMITTED -->
+
+_Video Pending_
 
 ## Challenge
 

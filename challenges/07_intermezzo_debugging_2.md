@@ -1,5 +1,7 @@
 # Intermezzo: Debugging 2
 
+_:construction: The videos for this section are pending. Check back shortly._
+
 _**This is a Makers Vine.** Vines are designed to gradually build up
 sophisticated skills. They contain a mixture of text and video, and may contain
 some challenge exercises without proposed solutions. [Read more about how to use
@@ -20,7 +22,7 @@ debugger.
 <!-- OMITTED -->
 
 The debugger we're going to use is hard to explain using text, [so please follow
-this video](https://youtu.be/gg_xGT2pjSk).
+this video](...).
 
 The below code will be useful if you want to follow along.
 

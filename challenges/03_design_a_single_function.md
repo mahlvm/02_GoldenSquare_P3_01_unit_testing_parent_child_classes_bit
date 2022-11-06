@@ -66,7 +66,7 @@ for each of the below exercises.
 
 ## Demonstration
 
-[A video demonstration](https://www.youtube.com/watch?v=3VwGSAOZ5sc&t=2374s)
+[A video demonstration](https://youtu.be/GqK-8YlwpOk)
 
 <!-- OMITTED -->
 
@@ -83,7 +83,7 @@ now, you'll get the hang of it.
 > I want to see an estimate of reading time for a text, assuming that I can read
 > 200 words a minute.
 
-[Example solution](https://www.youtube.com/watch?v=3VwGSAOZ5sc&t=3535s)
+[Example solution](https://www.youtube.com/watch?v=wPC2JICqodQ&t=0s)
 
 ### Two
 
@@ -92,7 +92,7 @@ now, you'll get the hang of it.
 > I want to verify that a text starts with a capital letter and ends with a
 > suitable sentence-ending punctuation mark.
 
-[Example solution](https://www.youtube.com/watch?v=3VwGSAOZ5sc&t=4490s)
+[Example solution](https://www.youtube.com/watch?v=wPC2JICqodQ&t=722s)
 
 ## Challenge
 

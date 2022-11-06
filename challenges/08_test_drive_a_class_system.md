@@ -10,7 +10,9 @@ Learn to test-drive a multi-class program.
 
 ## Introduction
 
-[This is a bit easier to follow on the video.](https://www.youtube.com/watch?v=eRniAN07Eow&t=0s)
+<!-- OMITTED -->
+
+_Video Pending_
 
 In these challenges we started off test-driving a single method. Then we moved
 to test-driving a class, which incorporated multiple methods. Now we will move
@@ -326,6 +328,8 @@ class DiaryEntry():
 ```
 
 <!-- OMITTED -->
+
+_Video Pending_
 
 ## Challenge
 

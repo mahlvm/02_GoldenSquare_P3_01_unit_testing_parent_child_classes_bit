@@ -111,7 +111,7 @@ can use the above syntax.
 
 ## Demonstration
 
-[Demonstration Video](https://www.youtube.com/watch?v=8vWmgQ3WCU0&t=2058s)
+[Demonstration Video](https://www.youtube.com/watch?v=XT30ee3ZfGE&t=2852s)
 
 ## Exercise
 
@@ -137,7 +137,7 @@ class Present:
 
 Write some tests for this class.
 
-[Example Solution](https://www.youtube.com/watch?v=8vWmgQ3WCU0&t=2425s)
+[Example Solution](https://www.youtube.com/watch?v=XT30ee3ZfGE&t=3317s)
 
 ## Challenge
 

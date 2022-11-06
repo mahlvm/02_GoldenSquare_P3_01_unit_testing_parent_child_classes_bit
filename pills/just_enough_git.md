@@ -1,7 +1,5 @@
 # Just Enough Git to Get Started
 
-_[A video demonstration is here](https://www.youtube.com/watch?v=wHkVhq5R0_8&t=1045s)_
-
 Git is a tool that software engineers use to manage changes to code. In industry
 there may be hundreds of programmers changing code every day, and so it is very
 important that this go smoothly.
@@ -33,6 +31,11 @@ guide.](https://docs.github.com/en/repositories/creating-and-managing-repositori
 ## Add a collaborator
 
 [Follow this guide.](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
+
+_[There's a workshop recording here on how to manage the pairing flow
+here.](https://youtu.be/uLbPGE6pRdc). You can ignore the Ruby parts._
+
+<!-- OMITTED -->
 
 ## Commit all of your changes
 

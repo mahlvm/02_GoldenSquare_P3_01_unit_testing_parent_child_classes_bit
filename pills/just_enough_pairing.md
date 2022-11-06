@@ -1,5 +1,10 @@
 # Just Enough Structure To Pair
 
+_[If you're looking for how to share code during pairing, there's a workshop
+recording here.](https://youtu.be/uLbPGE6pRdc). You can ignore the Ruby parts._
+
+<!-- OMITTED -->
+
 Pairing is a very powerful practice for software engineers. There are two
 reasons:
 
@@ -21,7 +26,8 @@ Here is a short guide on how to pair. There are six steps:
 5. [Pair!](#step-4-pair)
 6. [Reflect](#step-5-reflect)
 
-[There's also a video of some real-world pairing if you want to see how it works in industry.](#a-professional-example)
+[There's also a video of some real-world pairing if you want to see how it works
+in industry.](#a-professional-example)
 
 ## Step 0: Get to know each other
 

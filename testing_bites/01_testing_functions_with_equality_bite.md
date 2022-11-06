@@ -152,7 +152,7 @@ def test_add_five_returns_eight_for_three():
 
 ## Demonstration
 
-[Demonstration Video](<!-- OMITTED -->)
+[Demonstration Video](https://www.youtube.com/watch?v=XT30ee3ZfGE&t=0s)
 
 ## Exercise
 
@@ -226,7 +226,7 @@ Write some tests for this function.
 
 ### Example Solutions
 
-[Example Solutions](<!-- OMITTED -->)
+[Example Solutions](https://www.youtube.com/watch?v=XT30ee3ZfGE&t=597s)
 
 ## Challenge
 

@@ -70,7 +70,9 @@ def test_formats_a_diary_entry():
 
 ## Demonstration
 
-[Demonstration Video](<!-- OMITTED -->)
+<!-- OMITTED -->
+
+_Video Pending_
 
 ## Exercise
 
@@ -120,7 +122,9 @@ Test-drive these classes. Include:
 2. Unit tests, exercising _all_ of the class's functionality, _without_ using or
    referring to the other class.
 
-[Example Solution](<!-- OMITTED -->)
+<!-- OMITTED -->
+
+_Video Pending_
 
 ## Challenge
 

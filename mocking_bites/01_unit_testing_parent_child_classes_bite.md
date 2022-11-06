@@ -10,7 +10,9 @@ Learn to unit test parent-child classes.
 
 ## Introduction
 
-[This is a bit easier to follow on the video.](<!-- OMITTED -->)
+<!-- OMITTED -->
+
+_Video Pending_
 
 A parent-child relationship between classes is one where there is a single class
 that looks after a list of other classes. For example, a `Diary` having many
@@ -102,7 +104,7 @@ def test_diary_counts_words_in_all_entries_with_fakes():
 
 class FakeTwoWordDiaryEntry:
     def count_words(self):
-          return 2
+        return 2
 
 
 class FakeThreeWordDiaryEntry:
@@ -182,8 +184,10 @@ Test-drive these classes. Include:
 1. Integration tests
 2. Unit tests, exercising _all_ of the class's functionality, _without_ using or
    referring to the other class.
+   
+<!-- OMITTED -->
 
-[Example Solution](<!-- OMITTED -->)
+_Video Pending_
 
 ## Challenge
 

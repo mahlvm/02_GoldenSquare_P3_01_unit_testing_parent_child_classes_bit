@@ -1,4 +1,4 @@
-# {{PROBLEM}} Method Design Recipe
+# {{PROBLEM}} Function Design Recipe
 
 Copy this into a `recipe.md` in your project and fill it out.
 
@@ -6,9 +6,9 @@ Copy this into a `recipe.md` in your project and fill it out.
 
 _Put or write the user story here. Add any clarifying notes you might have._
 
-## 2. Design the Method Signature
+## 2. Design the Function Signature
 
-_Include the name of the method, its parameters, return value, and side effects._
+_Include the name of the function, its parameters, return value, and side effects._
 
 ```python
 # EXAMPLE
@@ -23,14 +23,14 @@ def extract_uppercase(mixed_words):
         a list of strings, each one a word (e.g. ["WORLD"])
 
     Side effects: (state any side effects)
-        This method doesn't print anything or have any other side-effects
+        This function doesn't print anything or have any other side-effects
     """
     pass # Test-driving means _not_ writing any code here yet.
 ```
 
 ## 3. Create Examples as Tests
 
-_Make a list of examples of what the method will take and return._
+_Make a list of examples of what the function will take and return._
 
 ```python
 # EXAMPLE
@@ -101,7 +101,7 @@ def test_extract_uppercase_with_upper_then_lower():
 
 ```
 
-Ensure all test method names are unique, otherwise pytest will ignore them!
+Ensure all test function names are unique, otherwise pytest will ignore them!
 
 
 <!-- BEGIN GENERATED SECTION DO NOT EDIT -->
