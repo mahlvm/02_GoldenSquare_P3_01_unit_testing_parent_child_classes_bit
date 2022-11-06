@@ -66,7 +66,7 @@ below exercises.
 
 ## Demonstration
 
-:construction: Video pending.
+[A video demonstration](https://youtu.be/OjrhRL4i1kc&t=0s)
 
 <!-- OMITTED -->
 
@@ -85,9 +85,20 @@ project. Both of these will be within a single class.
 
 Don't worry about user input & output here.
 
-:construction: Video pending.
+<details>
+  <summary>:confused: I keep getting `TypeError: 'list' object is not callable`</summary>
 
-<!-- OMITTED -->
+  Note that your methods and instance variables (e.g. `self.list`) can't be
+  named the same thing. 
+  
+  An easy way to go right is to name your instance variables with a leading
+  underscore (e.g. `self._list`).
+
+  If you keep having trouble, feel free to refer to the video or discuss with
+  your coach.
+</details>
+
+[Example Solution](https://youtu.be/OjrhRL4i1kc&t=1805s)
 
 ## Challenge
 
