@@ -1,7 +1,8 @@
 # Just Enough Structure To Pair
 
 _[If you're looking for how to share code during pairing, there's a workshop
-recording here.](https://youtu.be/uLbPGE6pRdc). You can ignore the Ruby parts._
+recording here.](https://youtu.be/uLbPGE6pRdc&t=0s) You can ignore the Ruby
+parts._
 
 <!-- OMITTED -->
 

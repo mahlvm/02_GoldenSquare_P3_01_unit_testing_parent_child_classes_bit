@@ -33,7 +33,7 @@ guide.](https://docs.github.com/en/repositories/creating-and-managing-repositori
 [Follow this guide.](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-user-account/managing-access-to-your-personal-repositories/inviting-collaborators-to-a-personal-repository)
 
 _[There's a workshop recording here on how to manage the pairing flow
-here.](https://youtu.be/uLbPGE6pRdc). You can ignore the Ruby parts._
+here.](https://youtu.be/uLbPGE6pRdc&t=0s) You can ignore the Ruby parts._
 
 <!-- OMITTED -->
 
