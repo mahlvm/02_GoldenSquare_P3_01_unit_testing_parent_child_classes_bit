@@ -1,7 +1,5 @@
 # Intermezzo: Debugging 2
 
-_:construction: The videos for this section are pending. Check back shortly._
-
 _**This is a Makers Vine.** Vines are designed to gradually build up
 sophisticated skills. They contain a mixture of text and video, and may contain
 some challenge exercises without proposed solutions. [Read more about how to use
@@ -19,10 +17,13 @@ execution.
 We'll now show you another technique for discovery debugging — an interactive
 debugger.
 
-<!-- OMITTED -->
+First, install [the Python extension for VS
+Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python), if
+you haven't already. This will allow you to use the right debugger.
 
-The debugger we're going to use is hard to explain using text, [so please follow
-this video](...).
+Then, [please follow this video](https://youtu.be/ncadn-fgeHc). There isn't a
+text equivalent because this style of debugger is difficult to clearly
+demonstrate in that manner.
 
 The below code will be useful if you want to follow along.
 
