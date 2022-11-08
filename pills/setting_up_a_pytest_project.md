@@ -68,7 +68,7 @@ To set up a new pytest project:
 # Verify your setup by running pytest
 ; pipenv run pytest
 ================================ test session starts ================================
-platform darwin -- Python 3.8.9, pytest-7.2.0, pluggy-1.0.0
+platform darwin -- Python 3.1, pytest-7.2.0, pluggy-1.0.0
 rootdir: .../your-project-directory
 collected 0 items
 

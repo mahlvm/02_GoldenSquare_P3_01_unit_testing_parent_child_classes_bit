@@ -130,7 +130,9 @@ fake_object.greet.assert_called_with("Henry") # This will throw an error
 
 ## Demonstration
 
-[Demonstration Video](<!-- OMITTED -->)
+<!-- OMITTED -->
+
+_Video Pending_
 
 ## Exercise
 
