@@ -73,9 +73,7 @@ for each of the below exercises.
 
 ## Demonstration
 
-<!-- OMITTED -->
-
-_Video pending_
+[A video demonstration](https://youtu.be/N7Daydk-_JY)
 
 ## Exercise
 
