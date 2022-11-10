@@ -1,6 +1,6 @@
 # The Golden Square
 
-_[A video summary is here.](https://youtu.be/tMMqSI2Cu6g&t=0s)_
+_[A video summary is here.](https://youtu.be/tMMqSI2Cu6g?t=0s)_
 
 The Golden Square refers to four software engineering practices:
 

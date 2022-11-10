@@ -66,7 +66,7 @@ below exercises.
 
 ## Demonstration
 
-[A video demonstration](https://youtu.be/OjrhRL4i1kc&t=0s)
+[A video demonstration](https://youtu.be/OjrhRL4i1kc?t=0s)
 
 <!-- OMITTED -->
 
@@ -98,7 +98,7 @@ Don't worry about user input & output here.
   your coach.
 </details>
 
-[Example Solution](https://youtu.be/OjrhRL4i1kc&t=1805s)
+[Example Solution](https://youtu.be/OjrhRL4i1kc?t=1805s)
 
 ## Challenge
 

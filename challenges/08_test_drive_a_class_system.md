@@ -10,9 +10,7 @@ Learn to test-drive a multi-class program.
 
 ## Introduction
 
-<!-- OMITTED -->
-
-_Video Pending_
+[This is a bit easier to follow on the video.](https://youtu.be/CGOETBVIaPQ?t=0s)
 
 In these challenges we started off test-driving a single method. Then we moved
 to test-driving a class, which incorporated multiple methods. Now we will move
@@ -242,9 +240,6 @@ to make sure you've thought through the full system.
 # File: lib/diary.py
 
 class Diary():
-    # Public Properties:
-    #   entries: a list instances of DiaryEntry
-
     def __init__(self):
         pass
 
@@ -257,6 +252,11 @@ class Diary():
         #   Adds the entry to the entries list
         pass
 
+    def all(self):
+        # Returns:
+        #   A list of instances of DiaryEntry
+        pass
+
     def count_words(self):
         # Returns:
         #   An integer representing the number of words in all diary entries
@@ -264,7 +264,7 @@ class Diary():
         #   This method should make use of the `count_words` method on DiaryEntry.
         pass
 
-    def reading_time(wpm):
+    def reading_time(self, wpm):
         # Parameters:
         #   wpm: an integer representing the number of words the user can read
         #        per minute
@@ -273,7 +273,7 @@ class Diary():
         #   if the user were to read all entries in the diary.
         pass
 
-    def find_best_entry_for_reading_time(wpm, minutes):
+    def find_best_entry_for_reading_time(self, wpm, minutes):
         # Parameters:
         #   wpm:     an integer representing the number of words the user can
         #            read per minute
@@ -298,12 +298,12 @@ class DiaryEntry():
         #   Sets the title and contents properties
         pass
 
-    def count_words():
+    def count_words(self):
         # Returns:
         #   An integer representing the number of words in the contents
         pass
 
-    def reading_time(wpm):
+    def reading_time(self, wpm):
         # Parameters:
         #   wpm: an integer representing the number of words the user can read
         #        per minute
@@ -312,7 +312,7 @@ class DiaryEntry():
         #   for the contents at the given wpm.
         pass
 
-    def reading_chunk(wpm, minutes):
+    def reading_chunk(self, wpm, minutes):
         # Parameters:
         #   wpm: an integer representing the number of words the user can read
         #        per minute
@@ -327,9 +327,7 @@ class DiaryEntry():
         pass
 ```
 
-<!-- OMITTED -->
-
-_Video Pending_
+[Example solution.](https://youtu.be/CGOETBVIaPQ?t=1738s)
 
 ## Challenge
 

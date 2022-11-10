@@ -1,6 +1,6 @@
 # Setting Up Pytest
 
-_[A video demonstration is here.](https://youtu.be/zM-YTFlo1pI&t=0s)_
+_[A video demonstration is here.](https://youtu.be/zM-YTFlo1pI?t=0s)_
 
 Learn to set up a new pytest project.
 

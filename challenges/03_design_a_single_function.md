@@ -66,7 +66,7 @@ for each of the below exercises.
 
 ## Demonstration
 
-[A video demonstration](https://youtu.be/GqK-8YlwpOk&t=0s)
+[A video demonstration](https://youtu.be/GqK-8YlwpOk?t=0s)
 
 <!-- OMITTED -->
 

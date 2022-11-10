@@ -101,7 +101,7 @@ Expected: theswiftfoxjumpedoverthelazydog
 ## Interlude: Methodical Debugging
 
 _[A condensed video explanation of this section is
-here.](https://youtu.be/YtRdDfO7aVA&t=0s)_
+here.](https://youtu.be/YtRdDfO7aVA?t=0s)_
 
 Exercise 2 probably felt hard. Most bugs are so easy we can solve them without
 thinking. But most of the _time_ you spend debugging will be on the hard bugs.
