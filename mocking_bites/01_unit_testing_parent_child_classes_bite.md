@@ -10,9 +10,7 @@ Learn to unit test parent-child classes.
 
 ## Introduction
 
-<!-- OMITTED -->
-
-_Video Pending_
+[This is a bit easier to follow on the video.](https://youtu.be/LgWgIzbOBxg?t=0s)
 
 A parent-child relationship between classes is one where there is a single class
 that looks after a list of other classes. For example, a `Diary` having many
@@ -184,10 +182,8 @@ Test-drive these classes. Include:
 1. Integration tests
 2. Unit tests, exercising _all_ of the class's functionality, _without_ using or
    referring to the other class.
-   
-<!-- OMITTED -->
 
-_Video Pending_
+[Example Solution](https://youtu.be/LgWgIzbOBxg?t=1562s)
 
 ## Challenge
 

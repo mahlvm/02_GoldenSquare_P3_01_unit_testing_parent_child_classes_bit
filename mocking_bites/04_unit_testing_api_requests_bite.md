@@ -39,7 +39,6 @@ updated, which is great, but it makes it hard to test. Consider:
 # File: lib/activity_suggester.py
 import requests
 
-
 class ActivitySuggester:
     def suggest(self):
         response = self._make_request_to_api()
@@ -72,7 +71,6 @@ Here's how we do that:
 
 ```python
 # File: lib/activity_suggester.py
-
 
 class ActivitySuggester:
     def __init__(self, requester):  # requester is usually `requests`
@@ -131,9 +129,7 @@ By crafting a mock that acts just like `requests`, at least as far as
 
 ## Demonstration
 
-<!-- OMITTED -->
-
-_Video Pending_
+[Demonstration Video](https://youtu.be/LgWgIzbOBxg?t=5256s)
 
 ## Exercise
 
@@ -142,7 +138,6 @@ Unit test this class.
 ```python
 import time
 import requests
-
 
 class TimeError:
     # Returns difference in seconds between the time on an external server
@@ -163,9 +158,7 @@ class TimeError:
 To make this testable, you will need to create a mock for `requests` and also
 deal with the behaviour of `time.time()` which is also non-deterministic.
 
-<!-- OMITTED -->
-
-_Video Pending_
+[Example Solution](https://youtu.be/LgWgIzbOBxg?t=6395s)
 
 <!-- OMITTED -->
 

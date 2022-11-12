@@ -130,9 +130,7 @@ fake_object.greet.assert_called_with("Henry") # This will throw an error
 
 ## Demonstration
 
-<!-- OMITTED -->
-
-_Video Pending_
+[Demonstration Video](https://youtu.be/LgWgIzbOBxg?t=2657s)
 
 ## Exercise
 
@@ -189,9 +187,7 @@ def test_creates_mock_for_specific_case():
 
 ```
 
-<!-- OMITTED -->
-
-_Video Pending_
+[Example Solution](https://youtu.be/LgWgIzbOBxg?t=3390s)
 
 ## Challenge
 

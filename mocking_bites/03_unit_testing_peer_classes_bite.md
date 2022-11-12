@@ -52,6 +52,7 @@ it into the class' `__init__` method.
 
 ```python
 # File: spec/test_diary_entry_formatter.py
+from lib.diary_entry_formatter import DiaryEntryFormatter
 from unittest.mock import Mock
 
 def test_formats_a_diary_entry():
@@ -70,9 +71,7 @@ def test_formats_a_diary_entry():
 
 ## Demonstration
 
-<!-- OMITTED -->
-
-_Video Pending_
+[Demonstration Video](https://youtu.be/LgWgIzbOBxg?t=3665s)
 
 ## Exercise
 
@@ -106,7 +105,7 @@ class SecretDiary:
 ```python
 # File: lib/diary.py
 
-class Diary
+class Diary:
     def __init__(self, contents):
         # contents is a string
         pass
@@ -122,9 +121,7 @@ Test-drive these classes. Include:
 2. Unit tests, exercising _all_ of the class's functionality, _without_ using or
    referring to the other class.
 
-<!-- OMITTED -->
-
-_Video Pending_
+[Example Solution](https://youtu.be/LgWgIzbOBxg?t=4423s)
 
 ## Challenge
 
