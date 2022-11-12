@@ -121,9 +121,10 @@ here.](https://airtable.com/shrNFgNkPWr3d63Db?prefill_Item=gspy_as03)
 
 ## Example Solution
 
-<!-- OMITTED -->
-
-_Video pending_
+There are many ways to solve this exercise, but [here is an example
+solution.](https://youtu.be/QzdvNpqTUKY) Bear in mind that once you look at it,
+you may be influenced by my approach and this may affect how much learning you
+can get from this exercise. That said, I trust you to make the right decision.
 
 ## Moving On
 
