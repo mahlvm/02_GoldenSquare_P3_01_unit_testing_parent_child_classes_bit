@@ -28,7 +28,7 @@ Consider the following design for a music library.
 ```python
 # File: lib/music_library.py
 
-class MusicLibrary():
+class MusicLibrary:
     # Public properties:
     #   tracks: a list of strings representing tracks
 
@@ -53,7 +53,7 @@ class MusicLibrary():
 ```python
 # File: lib/track.py
 
-class Track():
+class Track:
     # Public properties:
     #   title: a string
     #   artist: a string
@@ -195,7 +195,7 @@ Implement it:
 ```python
 # File: lib/music_library.py
 
-class MusicLibrary():
+class MusicLibrary:
   pass
 
 ```
@@ -239,7 +239,7 @@ to make sure you've thought through the full system.
 ```python
 # File: lib/diary.py
 
-class Diary():
+class Diary:
     def __init__(self):
         pass
 
@@ -288,7 +288,7 @@ class Diary():
 
 # File: lib/diary_entry.py
 
-class DiaryEntry():
+class DiaryEntry:
     # Public Properties:
     #   title: a string
     #   contents: a string
@@ -335,7 +335,7 @@ Test-drive a class system based on this design:
 
 ```python
 # File: lib/todo_list.py
-class TodoList():
+class TodoList:
     def __init__(self):
         pass
 
@@ -367,7 +367,7 @@ class TodoList():
 
 
 # File: lib/todo.py
-class Todo():
+class Todo:
     # Public Properties:
     #   task: a string representing the task to be done
     #   complete: a boolean representing whether the task is complete

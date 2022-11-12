@@ -13,7 +13,7 @@ _Include the initializer, public properties, and public methods with all paramet
 ```python
 # EXAMPLE
 
-class Reminder():
+class Reminder:
     # User-facing properties:
     #   name: string
 

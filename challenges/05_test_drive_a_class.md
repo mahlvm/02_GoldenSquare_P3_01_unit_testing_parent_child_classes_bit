@@ -76,7 +76,7 @@ Test-drive a class with the following interface. Feel free to re-use your
 previous code, or re-write it if you want to practice.
 
 ```python
-class DiaryEntry():
+class DiaryEntry:
     def __init__(self, title, contents):
         # Parameters:
         #   title: string
@@ -127,7 +127,7 @@ Test-drive a class with the following interface. Feel free to re-use or re-write
 your previous code.
 
 ```python
-class GrammarStats():
+class GrammarStats:
     def __init__(self):
         pass
   

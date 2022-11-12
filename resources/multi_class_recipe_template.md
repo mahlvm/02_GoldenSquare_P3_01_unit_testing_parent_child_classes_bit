@@ -35,7 +35,7 @@ uses asciiflow.com but you could also use excalidraw.com, draw.io, or miro.com_
 _Also design the interface of each class in more detail._
 
 ```python
-class MusicLibrary():
+class MusicLibrary:
     # User-facing properties:
     #   tracks: list of instances of Track
 
@@ -57,7 +57,7 @@ class MusicLibrary():
         pass # No code here yet
 
 
-class Track():
+class Track:
     # User-facing properties:
     #   title: string
     #   artist: string
