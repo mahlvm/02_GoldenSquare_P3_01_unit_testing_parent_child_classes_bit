@@ -68,7 +68,6 @@ tests using pytest.
 2. [Crafting Mocks](mocking_bites/02_crafting_mocks_bite.md)
 3. [Unit Testing Peer Classes](mocking_bites/03_unit_testing_peer_classes_bite.md)
 4. [Unit Testing API Requests](mocking_bites/04_unit_testing_api_requests_bite.md)
-5. [Unit Testing Terminal IO](mocking_bites/05_unit_testing_terminal_io_bite.md)
 
 ### Phase Four: Solo Project
 

@@ -61,7 +61,7 @@ updated recipe:
 > mistake earlier.
 
 Copy and fill out [this
-template](../resources/single_python_class_recipe_template.md) for each of the
+template](../resources/single_class_recipe_template.md) for each of the
 below exercises.
 
 ## Demonstration

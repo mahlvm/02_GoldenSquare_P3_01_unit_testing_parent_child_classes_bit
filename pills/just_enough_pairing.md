@@ -21,10 +21,10 @@ I have seen very capable engineers burn out due to the last one — be warned!
 Here is a short guide on how to pair. There are six steps:
 
 - [Step 0: Get to know each other](#step-0-get-to-know-each-other)
-  - [Step 1: Decide where to work](#step-1-decide-where-to-work)
-  - [Step 2: Agree your approach](#step-2-agree-your-approach)
-  - [Step 3: Agree your Rhythm](#step-3-agree-your-rhythm)
-  - [Step 4: Pair!](#step-4-pair)
+- [Step 1: Decide where to work](#step-1-decide-where-to-work)
+- [Step 2: Agree your approach](#step-2-agree-your-approach)
+- [Step 3: Agree your Rhythm](#step-3-agree-your-rhythm)
+- [Step 4: Pair!](#step-4-pair)
 - [Step 5: Reflect](#step-5-reflect)
 - [A Professional Example](#a-professional-example)
 
@@ -40,7 +40,7 @@ If you've not worked together recently, ask each other in turn:
 
 If you have worked together before recently then move on to the next step.
 
-### Step 1: Decide where to work
+## Step 1: Decide where to work
 
 First, decide on whose code you would like to base your work off of. It is
 generally preferable to start with the code of the person who is least far
@@ -49,7 +49,7 @@ through the material, otherwise they may be lost.
 When you've decided, ensure you are both
 [collaborators](just_enough_git.md#add-a-collaborator) on the repository.
 
-### Step 2: Agree your approach
+## Step 2: Agree your approach
 
 Here is a suggested approach for pairing:
 
@@ -83,7 +83,7 @@ you would like to work. However, you should almost always still prioritise
 **shared understanding and joint attention with full engagement of both partners
 on the same task**
 
-### Step 3: Agree your Rhythm
+## Step 3: Agree your Rhythm
 
 **It is vital to take breaks and swap roles regularly.** Pairing is demanding
 and if you don't take breaks you are likely to overdo it!
@@ -102,7 +102,7 @@ your phase time from 25m to perhaps 45m. Watch out for fatigue and frustration.
 Some of these cycles might not involve much or any programming. Sometimes you'll
 just be talking things through. That's OK!
 
-### Step 4: Pair!
+## Step 4: Pair!
 
 Feel free to take longer breaks, especially if one of you gets confused or
 stressed.

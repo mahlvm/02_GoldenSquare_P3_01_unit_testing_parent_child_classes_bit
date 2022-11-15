@@ -27,6 +27,19 @@ Learn to test API requests using Pythons mocks.
 > # If this command runs with no output and no errors, you're good!
 > ```
 > 
+> To activate the virtual environment, i.e. before running pytest, then run:
+> 
+> ```shell
+> ; pipenv shell
+> ; pytest
+> ================================ test session starts ================================
+> platform darwin -- Python 3.1, pytest-7.2.0, pluggy-1.0.0
+> rootdir: .../your-project-directory
+> collected 0 items
+> 
+> =============================== no tests ran in 0.01s ===============================
+> ```
+> 
 > If you have any trouble, please consult a coach.
 
 So far this has been a bit theoretical. Now we will show you a realistic
