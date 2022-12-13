@@ -57,7 +57,7 @@ with a :satellite:.
 6. [Design a Class](challenges/06_design_a_class.md) :satellite:
 7. [Intermezzo: Debugging 2](challenges/07_intermezzo_debugging_2.md)
 8. [Test Drive a Class System](challenges/08_test_drive_a_class_system.md) 
-9. [Design a Class System](challenges/09_design_a_class_system.md) :satellite:
+9. [Design a Class System](challenges/09_design_a_class_system.md)
 
 ### Phase Three: Mocking Bites
 

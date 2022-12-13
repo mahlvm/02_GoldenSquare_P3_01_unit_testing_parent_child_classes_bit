@@ -26,7 +26,6 @@ def add_five(num):
 # File: tests/test_add_five.py
 from lib.add_five import *
 
-
 def test_add_five_returns_eight_for_three():
     result = add_five(3)
     assert result == 8
@@ -90,6 +89,9 @@ tests/test_add_five.py .                                     [100%]
       ├── __init__.py
       └── test_add_five.py
   ```
+
+  Also check that you've prefixed the names of your test methods with `test`, as this is  
+  necessary for `pytest` to find your tests.
 
   ---
 </details>
