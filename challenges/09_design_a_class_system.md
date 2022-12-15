@@ -73,7 +73,7 @@ for each of the below exercises.
 
 ## Demonstration
 
-[A video demonstration](https://youtu.be/N7Daydk-_JY)
+[A video demonstration](https://youtu.be/N7Daydk-_JY&t=0s)
 
 ## Exercise
 
@@ -115,7 +115,7 @@ Some pointers:
 ## Example Solution
 
 There are many ways to solve this exercise, but [here is an example
-solution.](https://youtu.be/QzdvNpqTUKY) Bear in mind that once you look at it,
+solution.](https://youtu.be/QzdvNpqTUKY&t=0s) Bear in mind that once you look at it,
 you may be influenced by my approach and this may affect how much learning you
 can get from this exercise. That said, I trust you to make the right decision.
 
