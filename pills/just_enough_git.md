@@ -1,12 +1,14 @@
 # Just Enough Git to Get Started
 
+_[A video demonstration is here](https://www.youtube.com/watch?v=wHkVhq5R0_8&t=1045s)_
+
 Git is a tool that software engineers use to manage changes to code. In industry
 there may be hundreds of programmers changing code every day, and so it is very
 important that this go smoothly.
 
 The basic principle is that a repository (a folder of code controlled by Git) is
 updated by making commits (a group of changes). These are then pushed (uploaded)
-to a remote source control hosting service (we use Github). They can then be
+to a remote source control hosting service (we use GitHub). They can then be
 pulled (downloaded) by other programmers.
 
 In this module you will need to:
@@ -16,7 +18,7 @@ In this module you will need to:
 * Commit your changes.
 * Push your commits to the remote repository.
 * (Perhaps) Pull new commits from a remote repository.
-* (Perhaps) Fork (duplicate) a repository to your Github account.
+* (Perhaps) Fork (duplicate) a repository to your GitHub account.
 
 Below is an example of each one of these.
 
@@ -64,7 +66,7 @@ here.](https://youtu.be/uLbPGE6pRdc?t=0s) You can ignore the Ruby parts._
 ; git pull
 ```
 
-## Fork a repository to your Github account
+## Fork a repository to your GitHub account
 
 [Follow this
 guide](https://docs.github.com/en/get-started/quickstart/fork-a-repo)

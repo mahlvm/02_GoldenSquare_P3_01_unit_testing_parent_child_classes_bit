@@ -13,8 +13,8 @@ Learn to test functions using pytest.
 _To follow along, [set up a pytest project using this
 guide.](../pills/setting_up_a_pytest_project.md)_
 
-We can use `assert` to test whether a function returns the right value. Here's an
-example:
+We can use `assert` to test whether a function returns the right value. Here's
+an example:
 
 ```python
 # File: lib/add_five.py
@@ -47,11 +47,11 @@ tests/test_add_five.py .                                     [100%]
 <details>
   <summary>:confused: My `pytest` says `ERROR collecting tests/test_add_five.py` or `ModuleNotFoundError: No module named 'lib'`</summary>
 
-  ---
-  
-  Have you put empty `__init__.py` files into both the `lib/` and `test`
-  directories? That's necessary for `pytest` to find your code. Your project
-  structure should look something like this:
+---
+
+Have you put empty `__init__.py` files into both the `lib/` and `test`
+directories? That's necessary for `pytest` to find your code. Your project
+structure should look something like this:
 
   ```
   .
@@ -65,18 +65,17 @@ tests/test_add_five.py .                                     [100%]
       └── test_add_five.py
   ```
 
-  ---
+---
 </details>
-
 
 <details>
   <summary>:confused: My `pytest` says `collected 0 items or `no tests ran`</summary>
-  
-  ---
 
-  Have you prefixed the name of your test file with `test`, like this: `test_add_five.py`? 
-  That's necessary for `pytest` to find your tests.
-  Your project structure should look something like this: 
+---
+
+Have you prefixed the name of your test file with `test`, like this:
+`test_add_five.py`? That's necessary for `pytest` to find your tests. Your
+project structure should look something like this: 
 
   ```
   .
@@ -90,10 +89,10 @@ tests/test_add_five.py .                                     [100%]
       └── test_add_five.py
   ```
 
-  Also check that you've prefixed the names of your test methods with `test`, as this is  
-  necessary for `pytest` to find your tests.
+Also check that you've prefixed the names of your test methods with `test`, as
+this is necessary for `pytest` to find your tests.
 
-  ---
+---
 </details>
 
 Then, if the function is broken in some way, the test fails.
@@ -158,7 +157,8 @@ def test_add_five_returns_eight_for_three():
 
 ## Exercise
 
-[To set up a pytest project for these exercises, follow this guide.](../pills/setting_up_a_pytest_project.md)
+[To set up a pytest project for these exercises, follow this
+guide.](../pills/setting_up_a_pytest_project.md)
 
 ### One
 
@@ -190,8 +190,8 @@ Write a test for this function.
       ...
     ```
   
-  These things are necessary for `pytest` to find your tests.
-  Your project structure should look something like this: 
+  These things are necessary for `pytest` to find your tests. Your project
+  structure should look something like this: 
 
   ```
   .

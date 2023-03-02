@@ -26,7 +26,6 @@ Here is a short guide on how to pair. There are six steps:
 - [Step 3: Agree your Rhythm](#step-3-agree-your-rhythm)
 - [Step 4: Pair!](#step-4-pair)
 - [Step 5: Reflect](#step-5-reflect)
-- [A Professional Example](#a-professional-example)
 
 [There's also a video of some real-world pairing if you want to see how it works
 in industry.](#a-professional-example)

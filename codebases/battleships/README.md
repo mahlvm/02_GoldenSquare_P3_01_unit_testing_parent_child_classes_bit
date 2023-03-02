@@ -27,8 +27,8 @@ investigate.
 
 After this, pick a few user stories from below, design your classes, and start
 test-driving. Note that the classes here are not the full set of classes
-necessary to for a good program design. As you build, you will need to break
-apart classes and add new ones.
+necessary for a good program design. As you build, you will need to break apart
+classes and add new ones.
 
 ## User Stories
 
