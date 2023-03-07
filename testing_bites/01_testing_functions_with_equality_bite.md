@@ -105,7 +105,7 @@ def add_five(num):
 
 ```shell
 # To run the tests
-; pipenv run tests
+; pipenv run pytest
 ======================= test session starts ========================
 platform darwin -- Python 3.8.2, pytest-7.1.3, pluggy-1.0.0
 rootdir: /Users/simo/code/python-scratch
