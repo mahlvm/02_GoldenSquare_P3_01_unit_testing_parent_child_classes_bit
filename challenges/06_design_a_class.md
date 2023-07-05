@@ -114,7 +114,7 @@ This will be in a new class.
 > I want to add tracks I've listened to and see a list of them.
 
 After you're done, [submit your recording
-here.](https://airtable.com/shrCmIfdnKF04DGyQ?prefill_Item=gspy_as02)
+here.](https://airtable.com/shrvo9ePjlwnaiLv5?prefill_Item=gspy_as02)
 
 
 [Next Challenge](07_intermezzo_debugging_2.md)

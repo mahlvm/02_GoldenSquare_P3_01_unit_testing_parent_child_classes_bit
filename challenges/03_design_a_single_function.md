@@ -107,7 +107,7 @@ Follow the design recipe to implement the following user story in your project:
 > I want to check if a text includes the string `#TODO`.
 
 After you're done, [submit your recording
-here.](https://airtable.com/shrCmIfdnKF04DGyQ?prefill_Item=gspy_as01)
+here.](https://airtable.com/shrvo9ePjlwnaiLv5?prefill_Item=gspy_as01)
 
 
 [Next Challenge](04_intermezzo_debugging_1.md)
